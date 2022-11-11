@@ -54,6 +54,7 @@ console.log(nowchaine);
 
 // console.log(typeof arbre);
 
+// les variables
 console.log(2+3);
 
 console.log(2-3);
@@ -88,4 +89,90 @@ if (m === y || m > 3 && m < y) {
     console.log("True !");
 } else {
     console.log("false !");
+}
+
+
+// les fonctions
+function faireQuelqueChose () {
+    console.log("je fais un truc");
+    console.log("trop cool");
+    console.log("HHHH");
+}
+faireQuelqueChose ();
+
+const faireUneTache = (tache) => {
+    console.log("je fais : " + tache);
+
+};
+
+faireUneTache("les courses");
+faireUneTache("les etudes");
+faireUneTache("la prospection");
+
+
+
+
+// probabilite
+(function maFonction() {
+    console.log("je me joue toute seule");
+})();
+
+(() => {
+    console.log("je me sour aussi");
+})();
+
+
+function add2(){
+    let a = 4;    
+    console.log(a);
+    return a + 2;
+};
+add2();
+
+let total2 = 0;
+
+function addition(x) {
+    total2 += x;
+    return total2;
+}
+
+function soustraction(x) {
+    total2 -= x;
+    return total2;
+}
+
+function divition(x) {
+    if (total2 === 0){
+        return (total2 = x)
+    }else {
+    total2 /= x;
+    return total2;
+    }
+}
+
+function multiplication(x) {
+    if (total2 === 0){
+        return (total2 = x)
+    }else {
+    total2 *= x;
+    return total2;
+    }
+}
+
+function reset() {
+    total2 = 0;
+}
+
+let a = -2
+let b = 10
+let c = -5
+let d = 4
+
+
+function checkIfNumber( x ){
+    if ( typeof x === 'number' ){
+        console.log( x + ' is a number.' ); 
+    } else {
+        console.log("Oops that's not a number.");
+	}
 }
