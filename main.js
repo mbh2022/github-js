@@ -33,19 +33,13 @@ btn.addEventListener(`click` , () => {
 // **********************************
 
 const mouseEvent = document.querySelector(`.mouseEvent`);
-const horizonal = document.querySelector[`.horizontal`];
-const verticale  = document.querySelector[`.vertical`];
+const horizonal = document.querySelector(`.Horizontal`);
+const verticale  = document.querySelector(`.Vertical`);
 
 mouseEvent.addEventListener(`mousemove`, (e) => {
+    console.log(e.x)
     horizonal.innerHTML = e.x;
     verticale.innerHTML = e.y;
     mouseEvent.style.left = e.x / window.innerWidth * 100 + "%";
 })
 
-
-{
-    return console.log(`"something ${a}"`);
-}
-giveMeSomething("is better than nothing");
-giveMeSomething("Bob Jane");
-GiveMeSomething("something");
